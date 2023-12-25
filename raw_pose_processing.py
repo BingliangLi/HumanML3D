@@ -98,7 +98,7 @@ paths = []
 folders = []
 dataset_names = []
 for root, dirs, files in os.walk('./amass_data'):
-    if root == './amass_data/':
+    if root == './amass_data':
         continue
     print(root, dirs, files)
     folders.append(root)
