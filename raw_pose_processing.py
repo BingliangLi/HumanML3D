@@ -98,9 +98,9 @@ paths = []
 folders = []
 dataset_names = []
 for root, dirs, files in os.walk('./amass_data'):
-#     print(root, dirs, files)
-#     for folder in dirs:
-#         folders.append(os.path.join(root, folder))
+    if root == './amass_data/':
+        continue
+    print(root, dirs, files)
     folders.append(root)
     for name in files:
         dataset_name = root.split('/')[2]
