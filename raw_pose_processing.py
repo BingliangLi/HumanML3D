@@ -242,6 +242,9 @@ index_file = pd.read_csv(index_path)
 total_amount = index_file.shape[0]
 fps = 20
 
+# create save_dir if not exists:
+if not os.path.exists(save_dir):
+    os.makedirs(save_dir)
 
 # In[13]:
 
