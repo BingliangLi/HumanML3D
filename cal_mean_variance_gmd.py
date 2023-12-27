@@ -67,8 +67,8 @@ if __name__ == '__main__':
     data_dir = './HumanML3D/new_joint_vecs_abs_3d/'
     save_dir = './HumanML3D/'
     mean, std = mean_variance(data_dir, save_dir, 22)
-    print("mean: ", mean)
-    print("Std: ", std)
+    # print("mean: ", mean)
+    # print("Std: ", std)
 
 
 # ### Check if your data is correct. If it's aligned with the given reference, then it is right
